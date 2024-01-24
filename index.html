@@ -3,148 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stop watch</title>
+    <title>Document</title>
 </head>
+<link rel="stylesheet" href="tinkercms.css">
 
-<style>
-
-    body{
-        background-color: grey;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height:100vh;
-    }
-
-   #container{
-    color:white;
-   }
-   .digit{
-    font-size: 150px;
-    font-weight: bold;
-   }
-   .txt{
-    font-size: 40px;
-    font-weight: bold;
-   }
-   #btn-container{
-    text-align: center;
-    margin-top: 40px;
-
-   }
-   .btn{
-    padding:7px 25px;
-    font-size:15px;
-    margin:0px 10px;
-    color:white;
-    cursor:pointer;
-    border:0px;
-   }
-
-   #start{
-    background-color: green;
-   }
-
-   #stop{
-    background-color: red;
-  }
-
-  #reset{
-    background-color: orange;
-  }
-</style>
 
 <body>
-
-    <div id="container">
-
-        <div id="time">
-
-           <span  class="digit" id="hrs">00</span> 
-           <span class="txt">hrs</span>
-
-           <span  class="digit"  id="min">00</span>
-           <span class="txt" >min</span>
-
-           <span  class="digit" id="sec">00</span>
-           <span class="txt" >sec</span>
-
-           <span  class="digit" id="count">00</span>
-           <span class="txt" >ms</span>
-
-        </div>
-
-        <div id="btn-container">
-
-         <button class="btn" id="start" onclick="start()">start</button>
-         <button id="stop" class="btn" onclick="stop()">stop</button>
-         <button id="reset" class="btn" onclick="reset()">reset</button>
-
-        </div>
-
+    <div class="container">
+         <div class="row">
+        
+              <div class="icon">
+                 <p>tinker</p>
+              </div>
+       
+          <div class="nav">
+               <ul id="nav">
+               <li id="same">FEATURES</li>
+               <li id="same">GETTING STARTED</li>
+               <li id="same">DEVELOPERS</li>
+               <li id="same"> <button id="button">DOWNLOADS</button></li>
+               </ul>
+       </div>
     </div>
 
-    <script>
-        var hr=0;
-        var min=0;
-        var sec=0;
-        var count=0;
-        var timer=false;
+        <div class="image">
+            <img class="img" src="C:\Users\91945\Desktop\my hardwork\css\tech.jpg" alt="">
+        </div>
 
-     function start(){
-       
-           timer=true;
-           stopwatch();
-     }
+        <div class="text">
+            <P>WHEN WAS THE LAST</P>
+            <P>TIME YOU HAD FUN </P>
+            <P>MAKING A WEBSITE?</P>
+        </div>
+        <div  id="para1"> <p>YEAH,THAT'S WHAT WE FIGURED.</p></div>
 
-     function stop(){
-          timer=false;
-     }
+      <div id="btn-icon"><span id="try">TRY OUT</span><br><span id="tin">tinker</span></div>
+      </div>
 
-     function reset(){
-         timer=false;
+      <div id="ltxt">
+          <div>TINKER IS THE FASTEST, EASIEST, MOST SICK WAY </div>
+          <div>TO CREATE AND EDIT WEB SITES EVER MADE</div>
+    </div>
+   
 
-         hr=0;
-         min=0;
-         sec=0;
-         count=0;
+<div id="icontxt">
+    <div>See what all the fuss is about. Click </div>
+    <div>the button above and you can try editing <u>this</u></div>
+    <div><u>very page</u> with tinker</div>
+</div>
 
-            document.getElementById('hrs').innerHTML = hr;
-            document.getElementById("min").innerHTML = min;
-            document.getElementById('sec').innerHTML = sec;
-            document.getElementById("count").innerHTML = count;
-     }
+<div id="tech">
+    <img src="C:\Users\91945\Desktop\my hardwork\css\tech3.jpg" width="100%" height="300px" alt="">
+</div>
+
+<div id="mediumtxt">
+    <div class="div1">WHY TINKER?</div>
+   <div class="div2"> Mostly because of how amazing it is in every conceivable way.</div>
+</div>
 
 
-     function stopwatch(){
 
-        if(timer == true){
-            count = count+1;
 
-            if(count==100){
-                count=0;
-                sec=sec+1;  
-            }
+<div id="about">
+   <div class="row">
 
-            if(sec==60){
-                sec=0;
-                min=min+1;  
-            }
+  <div class="data">
+    <img class="images" src="C:\Users\91945\Desktop\my hardwork\css\apples and oranges.png" alt="">
+    <div class="heading">NO MORE TRIAL-AND-ERROR EDITING</div>
+    <div class="paragraph">
+        Tinker has real WYSIWYG. No need to go to a separate admin panel that shows you a completely different version of your site; you edit your content on the web page itself. You see how your page will look to your users as you make changes.
+    </div>
+  </div>
 
-            if(min==60){
-                min=0;
-                hrs=hrs+1;  
-            }
-            document.getElementById('hrs').innerHTML = hr;
-            document.getElementById("min").innerHTML = min;
-            document.getElementById('sec').innerHTML = sec;
-            document.getElementById("count").innerHTML = count;
-            setTimeout("stopwatch()",10);
-        }
-       
-     }
-       
-    </script>
     
+  <div class="data">
+    <img class="images" src="C:\Users\91945\Desktop\my hardwork\css\ice cream.png" alt="">
+    <div class="heading">EVERYBODY MAKES MISTAKES</div>
+    <div class="paragraph">
+        With built-in automatic drafts and revisions, you or your clients will never have to worry about losing important content when you get a little too ambitious in your edits. You can preview any version, and even make edits to them, before making the changes live.
+    </div>
+  </div>  
+
+
+  <div class="data">
+    <img class="images" src="C:\Users\91945\Desktop\my hardwork\css\drag and drop.png" alt="">
+    <div class="heading">DRAG AND DROP IT LIKE IT’S HOT</div>
+    <div class="paragraph">
+Moving content, reordering pages, uploading and swapping images… you can do all these as easily as you could in a Word document. And in several minutes less time than it takes to open Word.
+    </div>
+  </div>
+
+   </div>
+</div>
+
+
+<div id="about">
+    <div class="row">
+ 
+   <div class="data">
+     <img class="images" src="C:\Users\91945\Desktop\my hardwork\css\caution.png" alt="">
+     <div class="heading"> IT'S “HOW-IS-THIS-EVEN-POSSIBLE?” FAST</div>
+     <div class="paragraph">
+        Tinker doesn’t use a database. Unlike most website content management systems, Tinker saves directly to the HTML files on your site. This means that your site’s viewers will see a static page—with virtually no overhead—that loads quickly and reliably, even if you decide to stop using Tinker.
+     </div>
+   </div>
+ 
+     
+   <div class="data">
+     <img class="images" src="C:\Users\91945\Desktop\my hardwork\css\cake.png"alt="">
+     <div class="heading"> EASY ON DEVELOPERS</div>
+     <div class="paragraph">
+        Tinker is easy to learn, giving developers fine-grained control over what’s editable, while still enabling site editors to easily update content without a lot of support. You can convert an existing HTML page to be tinkerable in minutes, or start your site with one of the built-in templates to get cranking right away.
+        It’s… a piece of cake. ^^
+     </div>
+   </div>  
+ 
+ 
+   <div class="data">
+     <img class="images" src="C:\Users\91945\Desktop\my hardwork\css\swiss army.png" alt="">
+     <div class="heading"> SO FLEXIBLE, AND YET SO POWERFUL!</div>
+     <div class="paragraph">
+        All that, plus : Tinker comes with built-in SEO controls, an intuitive file manager interface, automatic page creation, user accounts for different types of users, powerful plugins to add or improve features, a modular page templating system to be able to create whole-site page layouts, and A BUNCH MORE.™
+     </div>
+   </div>
+ 
+    </div>
+ </div>
+
+
+ <div id="bigtxt">
+    <div class="big">
+        OH YEAH, AND IT’S FREE
+    </div>
+    <div class="bigpara">Uhhh… for now. As a beta tester, you can install Tinker for free until we officially launch later this year. But don’t worry, go ahead, make as many sites as you want. Even when we go pro, you won’t lose a thing.</div>
+ </div>
+
+<div id="review-background">
+    <img src="C:\Users\91945\Desktop\my hardwork\css\review.jpg" width="100%" height="100%" alt="">
+</div>
+<div id="shadow">
+
+</div>
+
+<div id="review">
+    <div class="row">
+        <div class="revi">
+
+            <span class="circle-img"><img src="C:\Users\91945\Desktop\my hardwork\css\boy1.jpg" alt=""></span>
+            <span class="img-txt">Mulayam</span>
+            <div class="review-txt">“I had Tinker up and running in minutes. The whole thing is just so fast and intuitive. I’ve learned to love life again.”</div>
+         
+         </div>   
+
+         <div class="revi">
+
+            <span class="circle-img"><img src="C:\Users\91945\Desktop\my hardwork\css\boy1.jpg" alt=""></span>
+            <span class="img-txt">kuldeep</span>
+            <div class="review-txt">“I had Tinker up and running in minutes. The whole thing is just so fast and intuitive. I've learned to love life again.”</div>
+         
+         </div>   
+
+         <div class="revi">
+
+            <span class="circle-img"><img src="C:\Users\91945\Desktop\my hardwork\css\boy1.jpg" alt=""></span>
+            <span class="img-txt">Shagun</span>
+            <div class="review-txt">“I had Tinker up and running in minutes. The whole thing is just so fast and intuitive. I’ve learned to love life again.”</div>
+         
+         </div>   
+
+    </div>
+</div>
+
+<div id="under-img">
+    <div class="text-one">WHAT DO OTHER PEOPLE </div>
+    <div class="text-one1">THINK OF TINKER?</div>
+    <div class="text-second">Tinker is indeed a paradigm-shattering phenomenon, but don't take our word for it.</div>
+</div>
+
+
+<div id="social-icon-txt">
+    <div class="social-txt">LIKE TINKER? SHARE TINKER.</div>
+    <div class="social-mini-txt"> Help us spread the word! We’re just getting started, so if you know somebody that might like Tinker, let them know!</div>
+
+    <div class="social-icon">
+        <span id="sameas"><a href=""><img src="C:\Users\91945\Desktop\my hardwork\css\twtricon.png" alt=""></a></span> 
+        <span id="sameas"><a href=""><img src="C:\Users\91945\Desktop\my hardwork\css\fcbkicon.png" alt=""></a></span> 
+        <span id="sameas"><a href=""><img src="C:\Users\91945\Desktop\my hardwork\css\envelope.png" alt=""></a></span>
+    </div>
+
+</div>
+
+
+<div>
+    <span></span>
+    <span>Tinker is very much a work in progress. Please bear with us as we merrily work to make everything perfect for you and your websites. Also, please don't sue us.</span>
+
+    <span></span>
+</div>
+
+
+
+
 </body>
 </html>
